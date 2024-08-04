@@ -1,7 +1,9 @@
-def count_occurrences(array, element):
-    return array.count(element)
+import array
 
-array = [1, 2, 3, 4, 2, 2, 5]
+def count_occurrences(arr, element):
+    return arr.count(element)
+
+arr = array.array('i', [1, 2, 3, 4, 2, 2, 5])
 element = 2
-occurrences = count_occurrences(array, element)
+occurrences = count_occurrences(arr, element)
 print(occurrences)
